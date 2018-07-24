@@ -4,11 +4,35 @@
 -->
 <html>
     <head>
-    <title>@ofke </title>
+    <title>@ofke | Servlet - Jsp Giriş Temel Kavramlar.</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div>1 - Servlet - Jsp Giriş Temel Kavramlar.</div>
+<h1>1 - Servlet Nedir</h1>
+<p>Servlet bir java sınıfıdır. Servlet konusunu anlayabilmek için <strong>Sunucu(Server)</strong> konusunda bilgi sahibi olmak gereklidir.</p>
+
+<h2>A) Sunucu(Server) Nedir</h2>
+<p>Sunucu basit şekilde içerisinde uygulama,veri, database vb. yapıları barındırabilen donanımdır. Sunucular bir ağa bağlı olarak çalışırlar.</p>
+
+<h2>B) İstemci(Client) Nedir</h2>
+<p> 
+    Sunucu(Server) üzerinden veri talep eden uygulamalara verilen genel bir isimdir. 
+    Örneğin : Bir sunucu üzerinde barınan bir web sitesinden <strong>Chorome</strong> browser ile yapmış olduğum istek durumunda 
+    chrome client görevi görmüş oluyor.
+</p>
+
+<h2>C) Sunucu & Client Çalışma Mantığı</h2>
+<p>
+    Kendi local bilgisayarımızı üzerinde Apache çalışan bir Server olarak düşünelim. Sunucumuz üzerinde ayrıca bir web sitesi barındırdığımızı varsayalım. 
+    Web Browserımızı açarak http://127.0.0.1/ adresini çalıştırdığımızda, local sunucumuza bir istek göndermiş olacağız işte bu isteğe <strong>Request</strong> denir.
+    Sunucu(Server) üzerine göndermiş olduğumuz istek(Request) sunucudan bir <strong>kaynak(Resource)</strong> isteğinde bulunur. Sunucu istemciden gelen isteği <strong>karşılar(handle request)</strong> ve istemciye 
+    <strong>cevap(Response)</strong> döner.
+</p>
+<h2>D) Servlet Çalışma Mantığı</h2>
+<p>
+    Servlet sınıfları server üzerinde çalışmaktadır. Sunucu istemciden gelen istekleri Servlet sınıfları ile işler ve istemciye cevap döner.
+</p>
 </body>
 </html>
