@@ -7,6 +7,9 @@ package ornek;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import static java.lang.System.out;
+import java.util.Date;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,6 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class first extends HttpServlet {
 
+    public int renk = 1;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -38,7 +42,7 @@ public class first extends HttpServlet {
             out.println("<title>Servlet first</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet first at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet first at " + request.getContextPath() + this.renk + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -82,5 +86,22 @@ public class first extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
+    /**
+     * Yapıcı sınıfımız Birkez çalışır.
+     * @throws ServletException 
+     */
+    @Override
+    public void init() throws ServletException {
+        this.renk = 12;
+    }
+    
+    /**
+     * Son çlışan method
+     */
+    @Override
+    public void destroy(){
+        this.renk = 15;
+    }
 
 }
