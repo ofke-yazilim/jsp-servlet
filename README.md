@@ -43,18 +43,18 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
 <p>
     <ul>
         <li style="padding: 10px;">Öncelikle <a href="https://netbeans.org/">https://netbeans.org/</a> adresine gidilerek En son Netbeans Sürümü İndirilir Bilgisayar Üzerine Yüklenir.</li>
-        <li style="padding: 10px;">Yükleme tamamlandıktan sonra Netbeans açılır. Üst menülerden File Sekmesi takip edilerek New Project tıklanır </li><li style="list-style: none;"><img src="images/i0.png"/></li>
-        <li style="padding: 10px;">Açılan Pencerede Categories kısmından Java Web ve Projects kısmından Web Aplication seçilir ve next tıklanır  </li><li style="list-style: none;"><img src="images/i1.png"/></li>
-        <li style="padding: 10px;">Açılan Pencerede Proje ismimizi ve local bilgisayarımızda dosyaların saklanacağı alanı belirliyoruz ve next diyoruz.  </li><li style="list-style: none;"><img src="images/i2.png"/></li>
-        <li style="padding: 10px;">Açılan Pencerede Java EE versiyonunu ve server uygulamamızı belirliyor ve Finish diyoruz.  </li><li style="list-style: none;"><img src="images/i3.png"/></li>
-        <li style="padding: 10px;">Uygulamamız Ekranın Sol kısmında oluşmuş olacak. </li><li style="list-style: none;"><img src="images/i4.png"/></li>
+        <li style="padding: 10px;">Yükleme tamamlandıktan sonra Netbeans açılır. Üst menülerden File Sekmesi takip edilerek New Project tıklanır </li><li style="list-style: none;"><img src="https://github.com/ofke-yazilim/jsp-servlet/tree/master/jsp-servlet/web/images/i0.png"/></li>
+        <li style="padding: 10px;">Açılan Pencerede Categories kısmından Java Web ve Projects kısmından Web Aplication seçilir ve next tıklanır  </li><li style="list-style: none;"><img src="https://github.com/ofke-yazilim/jsp-servlet/tree/master/jsp-servlet/web/images/i1.png"/></li>
+        <li style="padding: 10px;">Açılan Pencerede Proje ismimizi ve local bilgisayarımızda dosyaların saklanacağı alanı belirliyoruz ve next diyoruz.  </li><li style="list-style: none;"><img src="https://github.com/ofke-yazilim/jsp-servlet/tree/master/jsp-servlet/web/images/i2.png"/></li>
+        <li style="padding: 10px;">Açılan Pencerede Java EE versiyonunu ve server uygulamamızı belirliyor ve Finish diyoruz.  </li><li style="list-style: none;"><img src="https://github.com/ofke-yazilim/jsp-servlet/tree/master/jsp-servlet/web/images/i3.png"/></li>
+        <li style="padding: 10px;">Uygulamamız Ekranın Sol kısmında oluşmuş olacak. </li><li style="list-style: none;"><img src="https://github.com/ofke-yazilim/jsp-servlet/tree/master/jsp-servlet/web/images/i4.png"/></li>
         <li style="padding: 10px;">Son olarak Java Web Uygulamalarımızda konfigirasyon işlemleri için kullanmakta olduğumuz web.xml dosyamızı oluşturuyoruz. 
             Dosyayı oluşturmak için sol kısımda oluşan projemizin ismine sağ tıklıyoruz. New->Other sekmesini takip ediyoruz. 
             Açılan Pencerenin Categories Kısmından Web seçilirken Projects kısmından web.xml seçiyoruz. 
             Next dediğimiz anda bize bir pencere açılacak ve web.xml dosyasını oluşturacağımız dosya yolunu gösterecek Finish diyoruz ve web.xml oluşturulmuş oluyor.
         </li>
-        <li style="list-style: none;margin-bottom: 10px;"><img src="images/i5.png"/></li>
-        <li style="list-style: none;"><img src="images/i6.png"/></li>
+        <li style="list-style: none;margin-bottom: 10px;"><img src="https://github.com/ofke-yazilim/jsp-servlet/tree/master/jsp-servlet/web/images/i5.png"/></li>
+        <li style="list-style: none;"><img src="https://github.com/ofke-yazilim/jsp-servlet/tree/master/jsp-servlet/web/images/i6.png"/></li>
     </ul>
 </p>
 </body>
