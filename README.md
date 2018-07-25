@@ -93,8 +93,8 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
     <h2>B) Oluşturduğumuz Servlet Fonksiyonlarını Tanıyalım.</h2>
     Servlet içersinde doGet,doPost..,init,destroy şeklinde önemli methodlarımız bulunmaktadır. Netbeans üzerinde servlet oluşturduğumuz zaman init ve destroy methodları otomotik oluşmaz bu 
     methodları el ile eklememiz gerekmektedir. 
-    <li>doGet => Get ile gönderilen dataların işlemesini sağlar. Get verileri link üzerinden gönderilmektedir.<li>
-    <li>doPost => Form üzernden gönderilen dataların işlenmesini sağlar. Form aracılığı ile gönderilen veriler POST adı ile geçer.<li>
+    <li>doGet => Get ile gönderilen dataların işlemesini sağlar. Get verileri link üzerinden gönderilmektedir.</li>
+    <li>doPost => Form üzernden gönderilen dataların işlenmesini sağlar. Form aracılığı ile gönderilen veriler POST adı ile geçer.</li>
     <li>init => Servlet çağrıldığında ilk çağrılan methodumuzdur.</li>
     <li>destroy => service() methodu çalıştıktan sonra çalışır. Yani doGet,doPost vb. methodlar çalışmasını bitirdikten sonra destroy methodu devreye girer.</li>
     <li>
