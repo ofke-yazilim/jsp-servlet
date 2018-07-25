@@ -53,8 +53,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
             Açılan Pencerenin Categories Kısmından Web seçilirken Projects kısmından web.xml seçiyoruz. 
             Next dediğimiz anda bize bir pencere açılacak ve web.xml dosyasını oluşturacağımız dosya yolunu gösterecek Finish diyoruz ve web.xml oluşturulmuş oluyor.
         </li>
-      
-    </ul>
+        </ul>
 </p>
 </body>
 </html>
