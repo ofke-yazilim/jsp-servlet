@@ -157,7 +157,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
             pw.print(user);  <br>
             pw.print(password);  <br>
             pw.print("</body></html>");  <br>
-            <br><strong>yukarıda parametrelerin değerlerini aldık  </strong><br>
+            <br><strong>yukarıda parametrelerin değerlerini aldık  </strong>
             <br><strong>Aşağıdaki  web.xml içerisine bu servlet için tanımlanmış değerleri alıyoruz. </strong> <br>
             Enumeration<String> enm = config.getInitParameterNames();  <br>
             while (enm.hasMoreElements()) {  <br>
