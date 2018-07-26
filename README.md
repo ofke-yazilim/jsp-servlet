@@ -209,6 +209,7 @@ public String getRealPath(String path); ==> <strong>Vermiş olduğumuz dosyanın
 public String getServletContextName();  ==> <strong>Context name ismini verir.</strong>
 public String getContextPath(); ==> <strong>Bulunduğumuz dizini döndürür.</strong>
 public InputStream getResourceAsStream(String path); ==> <strong>Dizini verilen dosyanın içeriğini almamızı sağlar.</strong>
+Yukarıda tanımlanan Fonksiyon kullanım Örnekleri  : <a href="https://github.com/ofke-yazilim/jsp-servlet/blob/master/jsp-servlet/src/java/ornek/three.java">https://github.com/ofke-yazilim/jsp-servlet/blob/master/jsp-servlet/src/java/ornek/three.java</a>
 public RequestDispatcher getRequestDispatcher(String path); ==> <strong>Servlet içerisinden jsp sayfasına ulaşmamızı sağlar forward ile kullanılırsa tanımlı objeleride taşır.</strong>
 </code>
 </pre>
