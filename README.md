@@ -164,7 +164,6 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
             while (enm.hasMoreElements()) {  <br>
             &nbsp;&nbsp;System.out.println(enm.nextElement());  <br>
             }  <br>
-        </code>
     </div>
 </p>
 </body>
