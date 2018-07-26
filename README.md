@@ -144,30 +144,37 @@ public Enumeration<String> getInitParameterNames(); ==> <strong>Parametre adın�
     <h3>Aşağıda oluşturulan bir servlet içerisinde servletconfig arabirimine ait fonksiyon kullanımları verilmiştir.</h3>
     <pre><code>
     <div style="width: 100%;float: left;margin-bottom: 15px;">
-            <strong>mime type hazırlanıyor</strong><br>
-            response.setContentType("text/html;charset=UTF-8");<br>
-            <br><strong>Response yazma nesnemiz hazırlanıyor </strong> <br>
-            PrintWriter pw = response.getWriter();  <br>
-            <br><strong>ServletConfig interface bağlanıyor </strong> <br>
-            ServletConfig config = getServletConfig();  <br>
-            <br><strong>web.xml içerisine tanımlanmış user değeri alınıyor</strong>  <br>
-            String user = config.getInitParameter("user");  <br>
-            <br><strong>web.xml içerisine tanımlanmış olan password değeri alınıyor</strong>  <br>
-            String password = config.getInitParameter("password");  <br>
-            <br><strong>şuan çalışan servlet ismnini alıyoruz. </strong> <br>
-            String servletName = config.getServletName();  <br>
-            <br><strong>Almış olduğumuz değerleri sayfa üzerine basıyoruz.</strong>  <br>
-            pw.print("<html><body>");  <br>
-            pw.print(servletName);  <br>
-            pw.print(user);  <br>
-            pw.print(password);  <br>
-            pw.print("</body></html>");  <br>
-            <br><strong>yukarıda parametrelerin değerlerini aldık  </strong>
-            <br><strong>Aşağıdaki  web.xml içerisine bu servlet için tanımlanmış değerleri alıyoruz. </strong> <br>
-            Enumeration<String> enm = config.getInitParameterNames();  <br>
-            while (enm.hasMoreElements()) {  <br>
-            &nbsp;&nbsp;System.out.println(enm.nextElement());  <br>
-            }  <br>
+<strong>mime type hazırlanıyor</strong><br>
+response.setContentType("text/html;charset=UTF-8");<br>
+
+<br><strong>Response yazma nesnemiz hazırlanıyor </strong> <br>
+PrintWriter pw = response.getWriter();  <br>
+
+<br><strong>ServletConfig interface bağlanıyor </strong> <br>
+ServletConfig config = getServletConfig();  <br>
+
+<br><strong>web.xml içerisine tanımlanmış user değeri alınıyor</strong>  <br>
+String user = config.getInitParameter("user");  <br>
+
+<br><strong>web.xml içerisine tanımlanmış olan password değeri alınıyor</strong>  <br>
+String password = config.getInitParameter("password");  <br>
+
+<br><strong>şuan çalışan servlet ismnini alıyoruz. </strong> <br>
+String servletName = config.getServletName();  <br>
+
+<br><strong>Almış olduğumuz değerleri sayfa üzerine basıyoruz.</strong>  <br>
+pw.print("<html><body>");  <br>
+pw.print(servletName);  <br>
+pw.print(user);  <br>
+pw.print(password);  <br>
+pw.print("</body></html>");  <br>
+
+<br><strong>yukarıda parametrelerin değerlerini aldık  </strong>
+<br><strong>Aşağıdaki  web.xml içerisine bu servlet için tanımlanmış değerleri alıyoruz. </strong> <br>
+Enumeration<String> enm = config.getInitParameterNames();  <br>
+while (enm.hasMoreElements()) {  <br>
+&nbsp;&nbsp;System.out.println(enm.nextElement());  <br>
+}  <br>
     </div>
     </code></pre>
 </p>
