@@ -106,17 +106,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
 </div>
 <p>
     <h2>A) web.xml Nedir ne işe yarar.</h2>
-    <ul>
-        <li style="padding: 10px;">
-            Java web projelerinin konfigirasyonlarının yapıldığı dosyanın adıdır. WEB-INF klasörü altında bulunmaktadır. Bu dosya üzerinde url linkleri için rewrate yapısını belirleyebilir.
-            Session süresini tanımlayabilir. Çeşitli kütüphanelere ait bilgileri tanımlayabiliriz. Örneğin ben database bağlantı bilglerimi bu dosya içerisinde tanımlayabilir.
-        </li>
-    </ul>
-    <h2>B) Şimdi Dosyayı inceleyelim.</h2>
-    
-    Aşağıda bulunan kısım ile oluşturmuş olduğumuz bir servletin bulunduğu dizin ve link yapısını tanımlamış olduk.
-    <p>
-    <textarea style="width: 50%;height: 150px;overflow:hidden;padding-top: 10px;">
+        <textarea style="width: 50%;height: 150px;overflow:hidden;padding-top: 10px;">
         <servlet>
             <servlet-name>first</servlet-name>  ==> Kullanılan Servlet Adını Temsil Eder
             <servlet-class>ornek.first</servlet-class> ==> Servletin dizinini yani içerisinde bulunduğu paketi/klasörü gösterir.  
@@ -126,37 +116,6 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
             <url-pattern>/first</url-pattern> ==> <strong>Link adresini temsil eder</strong> 
         </servlet-mapping>
     </textarea>
-    </p>
-    
-    two adında yeni bir servlet oluşturduk oluşturmuş olduğumuz bu servlet içerisinde kullanılmak üzeri iki adet parametre belirlemek istersek <br>
-    oluşacak örnek kullanım aşağıdadır. Servlet içerisinde kullanmak üzere "user" ve "password" değerlerinin tanımlanmasını görelim.
-    <p>
-    <textarea style="width: 50%;height: 200px;overflow:hidden;padding-top: 10px;">
-        <servlet>
-            <servlet-name>two</servlet-name>  ==> Kullanılan Servlet Adını Temsil Eder
-            <servlet-class>ornek.two</servlet-class> ==> Servletin dizinini yani içerisinde bulunduğu paketi/klasörü gösterir.
-            <init-param> ==> Kullanacağımız parametrelerin tanımlanacağı tag başlangıcı.
-                <param-name>user</param-name> ==> Parametre adı
-                <param-value>ofke</param-value> ==> Parametre Değeri
-            </init-param>
-            <init-param>
-                <param-name>password</param-name> ==> Parametre adı
-                <param-value>123456</param-value> ==> Parametre Değeri
-            </init-param>
-        </servlet>
-    </textarea>
-    </p>
-    
-    web.xml içerisinde session oturum süresi belirlenebilir.
-    <p>
-        <textarea style="width: 50%;height: 100px;overflow:hidden;padding-top: 10px;">
-            <session-config>
-                <session-timeout>
-                    30 ==> 30 dakika boyunca veriler session içerisinde saklanabilir.
-                </session-timeout>
-            </session-config>
-        </textarea>
-    </p>
 </p>
 </body>
 </html>
