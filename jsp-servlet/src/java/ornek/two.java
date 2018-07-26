@@ -7,6 +7,8 @@ package ornek;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Enumeration;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -29,18 +31,34 @@ public class two extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        //mime typ hazırlanıyor
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet two</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet two at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+        
+        //Response yazma nesnemiz hazırlanıyor
+        PrintWriter pw = response.getWriter();
+
+        //ServletConfig interface bağlanıyor
+        ServletConfig config = getServletConfig();
+
+        //web.xml içerisine tanımlanmış user değeri alınıyor
+        String user = config.getInitParameter("user");
+        //web.xml içerisine tanımlanmış olan password değeri alınıyor
+        String password = config.getInitParameter("password");
+        //şuan çalışan servlet ismnini alıyoruz.
+        String servletName = config.getServletName();
+
+        //Almış olduğumuz değerleri sayfa üzerine basıyoruz.
+        pw.print("<html><body>");
+        pw.print(servletName + "<br>");
+        pw.print(user + "<br>");
+        pw.print(password + "<br>");
+        pw.print("</body></html>");
+
+        //yukarıda parametrelerin değerlerini aldık
+        //Aşağıdaki  web.xml içerisine bu servlet için tanımlanmış değerleri alıyoruz.
+        Enumeration<String> enm = config.getInitParameterNames();
+        while (enm.hasMoreElements()) {
+            System.out.println(enm.nextElement());
         }
     }
 
