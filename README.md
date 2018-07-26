@@ -2,15 +2,13 @@
 Bu Projede Jsp ve Servlet konularından bahsedeceğim.
 <pre>
 <code>
-<ul>
-    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#1">1.Servlet Nedir </a></li>
-    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#2">2.Servlet ve Servlet Container Genel Tanım ve Görevleri </a></li>
-    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#3">3.Netbeans Derleyicisi İle Web Projesi Oluşturma </a></li>
-    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#4">4.Netbeans İlk Servlet Uygulaması </a></li>
-    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#5">5.Web.xml Ayrıntılı İnceleme </a></li>
-    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#6">6.ServletConfig </a></li>
-    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#7">7.ServletContext </a></li>
-</ul>
+<a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#1">1.Servlet Nedir </a>
+<a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#2">2.Servlet ve Servlet Container Genel Tanım ve Görevleri </a>
+<a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#3">3.Netbeans Derleyicisi İle Web Projesi Oluşturma </a>
+<a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#4">4.Netbeans İlk Servlet Uygulaması </a>
+<a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#5">5.Web.xml Ayrıntılı İnceleme </a>
+<a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#6">6.ServletConfig </a>
+<a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#7">7.ServletContext </a>
 </code>
 </pre>
 
