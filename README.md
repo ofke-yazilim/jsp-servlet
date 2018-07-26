@@ -106,7 +106,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
 </div>
 <p>
     <h2>A) web.xml Nedir ne işe yarar.</h2>
-    {::nomarkdown}
+ <code>
 
 <!-- HTML CODE-->
 <textarea style="width: 50%;height: 150px;overflow:hidden;padding-top: 10px;">
@@ -119,7 +119,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
             <url-pattern>/first</url-pattern> ==> <strong>Link adresini temsil eder</strong> 
         </servlet-mapping>
     </textarea>
-{:/}
+</code>
         
 </p>
 </body>
