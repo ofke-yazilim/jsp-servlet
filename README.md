@@ -1,8 +1,21 @@
-# jsp-servlet
+# JSP & SERVLET Döküman ve Örnekler
 Bu Projede Jsp ve Servlet konularından bahsedeceğim.
+<pre>
+<code>
+<ul>
+    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#1">1.Servlet Nedir </a></li>
+    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#2">2.Servlet ve Servlet Container Genel Tanım ve Görevleri </a></li>
+    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#3">3.Netbeans Derleyicisi İle Web Projesi Oluşturma </a></li>
+    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#4">4.Netbeans İlk Servlet Uygulaması </a></li>
+    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#5">5.Web.xml Ayrıntılı İnceleme </a></li>
+    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#6">6.ServletConfig </a></li>
+    <li><a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#7">7.ServletContext </a></li>
+</ul>
+</code>
+</pre>
 
 <html>
-<h1>Servlet Nedir</h1>
+<h1 id='1'>Servlet Nedir</h1>
 <p>Servlet bir java sınıfıdır. Servlet konusunu anlayabilmek için <strong>Sunucu(Server)</strong> konusunda bilgi sahibi olmak gereklidir.</p>
 
 <h2>A) Sunucu(Server) Nedir</h2>
@@ -27,7 +40,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
     Servlet sınıfları server üzerinde çalışmaktadır. Sunucu istemciden gelen istekleri Servlet sınıfları ile işler ve istemciye cevap döner.
 </p>
 <div>
-    <h1>2 - (Servlet - Jsp)  Servlet ve Servlet Container Genel Tanım ve Görevleri.</h1>
+    <h1 id='2'>2 - (Servlet - Jsp)  Servlet ve Servlet Container Genel Tanım ve Görevleri.</h1>
 </div>
 <p>
     Bir önceki konuda Sunucu - İstemci çalışma mantığından bahsetmiştim. Bu mantık doğrultusunda
@@ -38,7 +51,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
     <strong>cevap(response)</strong> olur. 
 </p>
 <div>
-    <h1>3 - (Servlet - Jsp)  Netbeans Derleyicisi İle Web Projesi Oluşturma</h1>
+    <h1 id='3'>3 - (Servlet - Jsp)  Netbeans Derleyicisi İle Web Projesi Oluşturma</h1>
 </div>
 <p>
     <ul>
@@ -56,7 +69,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
         </ul>
 </p>
 <div>
-    <h1>4 - (Servlet - Jsp)  Netbeans İlk Servlet Uygulaması</h1>
+    <h1 id='4'>4 - (Servlet - Jsp)  Netbeans İlk Servlet Uygulaması</h1>
 </div>
 <p>
     <h2>A) Netbeans Servlet Oluşturma</h2>
@@ -102,7 +115,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
     </li>
 </p>
 <div>
-    <h1>5 - (Servlet - Jsp)  Web.xml Ayrıntılı İnceleme</h1>
+    <h1 id='5'>5 - (Servlet - Jsp)  Web.xml Ayrıntılı İnceleme</h1>
 </div>
 <p>
     <h2>A) web.xml Nedir ne işe yarar.</h2>
@@ -179,7 +192,7 @@ while (enm.hasMoreElements()) {  <br>
     </code></pre>
 </p>
     <div>
-    <h1>7 - (Servlet - Jsp)   ServletConfig</h1>
+    <h1 id='7'>7 - (Servlet - Jsp)   ServletConfig</h1>
 </div>
 <p>
     <h2>A) ServletContext Nedir </h2>
