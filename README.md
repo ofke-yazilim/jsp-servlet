@@ -113,6 +113,9 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
         </li>
     </ul>
     <h2>B) Şimdi Dosyayı inceleyelim.</h2>
+    <ul>
+    <li> web.xml incelemesini <a target="_blank" href="http://okesmez.com/jsp-servlet/5_web.xml_incele.html">http://okesmez.com/jsp-servlet/5_web.xml_incele.html</a> adresinde mevcutur.</li>
+    </ul>
 </p>
 </body>
 </html>
