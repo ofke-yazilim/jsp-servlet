@@ -106,17 +106,13 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
 </div>
 <p>
     <h2>A) web.xml Nedir ne işe yarar.</h2>
- <code>
-          <servlet>
-            <servlet-name>first</servlet-name>  ==> Kullanılan Servlet Adını Temsil Eder
-            <servlet-class>ornek.first</servlet-class> ==> Servletin dizinini yani içerisinde bulunduğu paketi/klasörü gösterir.  
-        </servlet>
-        <servlet-mapping> ==> Servletin çalışmasını sağlayacak url adresi tanımlamalarını içerir. 
-            <servlet-name>first</servlet-name> ==> Kullanılan Servlet Adını Temsil Eder
-            <url-pattern>/first</url-pattern> ==> <strong>Link adresini temsil eder</strong> 
-        </servlet-mapping>
-</code>
-        
+    <ul>
+        <li style="padding: 10px;">
+            Java web projelerinin konfigirasyonlarının yapıldığı dosyanın adıdır. WEB-INF klasörü altında bulunmaktadır. Bu dosya üzerinde url linkleri için rewrate yapısını belirleyebilir.
+            Session süresini tanımlayabilir. Çeşitli kütüphanelere ait bilgileri tanımlayabiliriz. Örneğin ben database bağlantı bilglerimi bu dosya içerisinde tanımlayabilir.
+        </li>
+    </ul>
+    <h2>B) Şimdi Dosyayı inceleyelim.</h2>
 </p>
 </body>
 </html>
