@@ -131,11 +131,14 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
     <h2>B) ServletConfig Methodlarına Bakalım.</h2>
     <div style="width: 100%;float: left;margin-bottom: 15px;">
         <code style="background-color: #ddd;padding: 10px;float: left;"> 
-            public String getServletName(); ==> <strong>Çalışmakta olan servlet adını alır.</strong> \<br/> <br>
-            public String getInitParameter(String name); <strong>Adı gönderilen parametrenin değerini döndürür.</strong>  <br>
-            public Enumeration<String> getInitParameterNames(); <strong>Parametre adını almamızı sağlar</strong>  <br>
+        ```
+            public String getServletName(); ==> <strong>Çalışmakta olan servlet adını alır.</strong> <br> 
+            public String getInitParameter(String name); ==> <strong>Adı gönderilen parametrenin değerini döndürür.</strong>  <br>
+            public Enumeration<String> getInitParameterNames(); ==> <strong>Parametre adını almamızı sağlar</strong>  <br>
+        ```
         </code>
     </div>
+    <br>
     <h2>B) Örnek Kullanım.</h2>
     Fonksiyon örnekleri için  : <a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet/blob/master/jsp-servlet/src/java/ornek/two.java">
         https://github.com/ofke-yazilim/jsp-servlet/blob/master/jsp-servlet/src/java/ornek/two.java</a><br>
