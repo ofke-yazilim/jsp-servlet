@@ -131,9 +131,9 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
     <h2>B) ServletConfig Methodlarına Bakalım.</h2>
     <pre>
     <code>
-        public String getServletName(); ==> <strong>Çalışmakta olan servlet adını alır.</strong> <br> 
-        public String getInitParameter(String name); ==> <strong>Adı gönderilen parametrenin değerini döndürür.</strong>  <br>
-        public Enumeration<String> getInitParameterNames(); ==> <strong>Parametre adını almamızı sağlar</strong>  <br>
+public String getServletName(); ==> <strong>Çalışmakta olan servlet adını alır.</strong> <br> 
+public String getInitParameter(String name); ==> <strong>Adı gönderilen parametrenin değerini döndürür.</strong>  <br>
+public Enumeration<String> getInitParameterNames(); ==> <strong>Parametre adını almamızı sağlar</strong>  <br>
     </code>
     </pre>
     <h2>B) Örnek Kullanım.</h2>
@@ -142,6 +142,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
     Anlatım için : <a target="_blank" href="http://okesmez.com/jsp-servlet/6_servlet_config.html">
         http://okesmez.com/jsp-servlet/6_servlet_config.html</a>
     <h3>Aşağıda oluşturulan bir servlet içerisinde servletconfig arabirimine ait fonksiyon kullanımları verilmiştir.</h3>
+    <pre><code>
     <div style="width: 100%;float: left;margin-bottom: 15px;">
             <strong>mime type hazırlanıyor</strong><br>
             response.setContentType("text/html;charset=UTF-8");<br>
@@ -168,6 +169,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
             &nbsp;&nbsp;System.out.println(enm.nextElement());  <br>
             }  <br>
     </div>
+    </code></pre>
 </p>
     <div>
     <h1>7 - (Servlet - Jsp)   ServletConfig</h1>
