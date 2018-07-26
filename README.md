@@ -139,8 +139,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
         http://okesmez.com/jsp-servlet/6_servlet_config.html</a>
     <h3>Aşağıda oluşturulan bir servlet içerisinde servletconfig arabirimine ait fonksiyon kullanımları verilmiştir.</h3>
     <div style="width: 100%;float: left;margin-bottom: 15px;">
-        <code style="background-color: #ddd;padding: 10px;float: left;"> 
-            <br><strong>mime type hazırlanıyor</strong><br>
+            <strong>mime type hazırlanıyor</strong><br>
             response.setContentType("text/html;charset=UTF-8");<br>
             <br><strong>Response yazma nesnemiz hazırlanıyor </strong> <br>
             PrintWriter pw = response.getWriter();  <br>
