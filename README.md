@@ -9,6 +9,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
 <a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#5">5.Web.xml Ayrıntılı İnceleme </a>
 <a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#6">6.ServletConfig </a>
 <a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#7">7.ServletContext </a>
+<a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet#8">8.Türkçe Karakter Sorunu </a>
 </code>
 </pre>
 
@@ -239,6 +240,17 @@ public RequestDispatcher getRequestDispatcher(String path); ==> <strong>Servlet 
 </code>
 </pre>
     </div>
+</p>
+<div>
+    <h1 id='8'>8 - (Servlet - Jsp)   Türkçe Karakter Sorunu </h1>
+</div>
+Oluşturmuş olduğumuz servlet içerisine aşağıdaki karakter seti tanımlamasını yaparsak Türkçe karakter hatası almayız.
+<p>
+<pre>
+<code>
+response.setCharacterEncoding("ISO-8859-9");
+</code>
+</pre>
 </p>
 </body>
 </html>
