@@ -186,7 +186,6 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
         &lt;param-name>email&lt;/param-name>
         &lt;param-value>info@ofkeyazilim.com&lt;/param-value>
     &lt;/context-param>
-
     &lt;context-param>
         &lt;param-name>nick&lt;/param-name>
         &lt;param-value>ofke&lt;/param-value>
