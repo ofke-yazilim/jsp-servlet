@@ -107,8 +107,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
 <p>
     <h2>A) web.xml Nedir ne işe yarar.</h2>
  <code>
-    <textarea style="width: 50%;height: 150px;overflow:hidden;padding-top: 10px;">
-        <servlet>
+          <servlet>
             <servlet-name>first</servlet-name>  ==> Kullanılan Servlet Adını Temsil Eder
             <servlet-class>ornek.first</servlet-class> ==> Servletin dizinini yani içerisinde bulunduğu paketi/klasörü gösterir.  
         </servlet>
@@ -116,7 +115,6 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
             <servlet-name>first</servlet-name> ==> Kullanılan Servlet Adını Temsil Eder
             <url-pattern>/first</url-pattern> ==> <strong>Link adresini temsil eder</strong> 
         </servlet-mapping>
-    </textarea>
 </code>
         
 </p>
