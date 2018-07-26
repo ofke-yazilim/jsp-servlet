@@ -75,7 +75,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
         <li style="padding: 10px;">
             Oluşturmuş olduğumuz projemizin içerisinde bulunan "Source Packages" üzerine sağ click yaparak "New->Folder" sekmesini takip ederek "ornek" adında bir paket(klasör) oluşturalım.
         </li>
-        <li style="padding: 10px;">
+        <li style="padding: 10px;" rel="">
             Oluşturulan "ornek" adlı paket üzerine sağ tıklayarak "New->Other" sekmesini takip edelim açılan pencerede Categories alanında "web" , File Types alanından ise "servlet" kısımlarını seçerek next diyelim. 
             <a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet/blob/master/jsp-servlet/web/images/i7.png">Görsel Gör</a>
         </li>
