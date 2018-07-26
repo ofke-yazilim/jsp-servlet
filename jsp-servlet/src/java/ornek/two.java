@@ -5,20 +5,8 @@
  */
 package ornek;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.io.PrintWriter;
-import static java.lang.System.out;
-import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -28,10 +16,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author o.kesmez
  */
-public class first extends HttpServlet {
+public class two extends HttpServlet {
 
-    public int renk = 1;
-    public String line = "";
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -43,31 +29,16 @@ public class first extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        String file = "dosyam.txt";
-        FileReader fileReader = new FileReader(file);
-
-        String _line;
-        BufferedReader br = new BufferedReader(fileReader);
-
-        while ((_line = br.readLine()) != null) {
-
-           this.line = _line;
-
-        }
-
-        br.close();
-
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet first</title>");            
+            out.println("<title>Servlet two</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet first at " + request.getContextPath() + this.renk  + this.line +  getServletContext().getRealPath("/") + "</h1>");
+            out.println("<h1>Servlet two at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -99,7 +70,7 @@ public class first extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        processRequest(request, response);
+        processRequest(request, response);
     }
 
     /**
@@ -112,40 +83,4 @@ public class first extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
-    /**
-     * Yapıcı sınıfımız Birkez çalışır.
-     * @throws ServletException 
-     */
-    @Override
-    public void init() throws ServletException {
-        this.renk = 12;
-    }
-    
-    /**
-     * Son çalışan method
-     */
-    @Override
-    public void destroy(){
-        try {
-            result();
-        } catch (IOException ex) {
-            Logger.getLogger(first.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-
-    public void result() throws IOException {
-        try{
-            File ds=new File(getServletContext().getRealPath("/") + "files\test25.txt");
-            if(ds.exists()){
-                out.println("Dosya zaten var ismi-->"+ds.getName()+"yolu-->"+ds.getAbsolutePath());
-            }
-            else{
-                ds.createNewFile();
-                out.println("dosyam isminde bir text dosyası olusturuldu");
-            }
-
-        } catch(IOException e2){
-            out.println(e2);
-        }
-    }
 }

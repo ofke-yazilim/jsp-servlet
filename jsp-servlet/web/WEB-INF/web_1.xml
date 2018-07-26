@@ -4,25 +4,9 @@
         <servlet-name>first</servlet-name>
         <servlet-class>ornek.first</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>two</servlet-name>
-        <servlet-class>ornek.two</servlet-class>
-        <init-param>
-            <param-name>user</param-name>
-            <param-value>ofke</param-value>
-        </init-param>
-        <init-param>
-            <param-name>password</param-name>
-            <param-value>123456</param-value>
-        </init-param>
-    </servlet>
     <servlet-mapping>
         <servlet-name>first</servlet-name>
         <url-pattern>/first</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>two</servlet-name>
-        <url-pattern>/two</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
