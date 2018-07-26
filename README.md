@@ -118,7 +118,7 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
     </ul>
 </p>
 <div>
-    <h1>6 - (Servlet - Jsp)   ServletConfig</h1>
+    <h1 id="6">6 - (Servlet - Jsp)   ServletConfig</h1>
 </div>
 <p>
     <h2>A) Nedir Bu ServletConfig.</h2>
