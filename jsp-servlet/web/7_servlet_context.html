@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+7 - (Servlet - Jsp)   ServletContext
+-->
+<html>
+    <head>
+    <title>@ofke |  ServletContext</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div>
+    <h1>7 - (Servlet - Jsp)   ServletConfig</h1>
+</div>
+<p>
+    <h2>A) ServletContext Nedir </h2>
+    <ul>
+        <li style="padding: 10px;">
+           web.xml içerisindeki parametrelere sadece ilgili servlet içerisinde ulaşmamızı sağlayan interface <strong>ServletConfig</strong>ti. Eğer biz web.xml içerisindeki parametrelere
+           tanımlamış olduğumuz tüm servlet ve jsp sayfalarından ulaşmak istiyorsa iş ozaman kullanmamız gereken arabirim <strong>ServletContext</strong> oluyor.
+        </li>
+    </ul>
+    <h2>B) ServletContext Parametreleri web.xml içerisine nasıl tanımlanır</h2>
+    Aşağıda ServletContext ile ulaşabileceğimiz parametrelerin web.xml içerisinde örnek bir kullanımını oluşturdum.
+    email ve nick adında olan bu parametreler belirtilen değerleri taşırlar.
+    <div style="width: 100%;float: left;margin-bottom: 15px;">
+<pre>
+<code style="background-color: #ddd;padding: 10px;float: left;padding-top: 0px;">
+    &lt;context-param>
+        &lt;param-name>email&lt;/param-name>
+        &lt;param-value>info@ofkeyazilim.com&lt;/param-value>
+    &lt;/context-param>
+
+    &lt;context-param>
+        &lt;param-name>nick&lt;/param-name>
+        &lt;param-value>ofke&lt;/param-value>
+    &lt;/context-param>
+</code>
+</pre>
+    </div>
+    <h2>C) Hadi ServletContext Fonksiyonları Tanıyalım</h2>
+    <div style="width: 100%;float: left;margin-bottom: 15px;">
+<pre>
+<code style="background-color: #ddd;padding: 10px;float: left;padding-top: 0px;"> 
+public String getInitParameter(String name); ==> <strong>Adı verilen parametre değerini döndürür.</strong>
+public Enumeration<String> getInitParameterNames(); ==> <strong>Tanımlı parametreleri içerir.</strong>
+public void setAttribute(String name, Object object); ==> <strong>Bir obje tanımlıyoruz ve objeye değer atıyoruz. Tanımladığımız bu obje tüm uygulamada geçerli olacaktır. (Aplication Scope)</strong>
+public Object getAttribute(String name); ==> <strong>Tanımladığımız objeye ait değeri alıyoruz.</strong>
+public void removeAttribute(String name); ==> <strong>Tanımladığımız objeyi siliyoruz.</strong>
+public Enumeration<String> getAttributeNames(); ==> <strong>Tanımladığımız objelerin adlarını içerir.</strong>
+public int getMajorVersion();  ==> <strong>Java Servlet Api Versiyon bilgisi alınıyor</strong>
+public String getServerInfo();   ==> <strong>Kullandığımız server bilgisini verir</strong>
+public String getRealPath(String path); ==> <strong>Vermiş olduğumuz dosyanın gerçek dosya yolunu gösterir.</strong>
+public String getServletContextName();  ==> <strong>Context name ismini verir.</strong>
+public String getContextPath(); ==> <strong>Bulunduğumuz dizini döndürür.</strong>
+public InputStream getResourceAsStream(String path); ==> <strong>Dizini verilen dosyanın içeriğini almamızı sağlar.</strong>
+public RequestDispatcher getRequestDispatcher(String path); ==> <strong>Servlet içerisinden jsp sayfasına ulaşmamızı sağlar forward ile kullanılırsa tanımlı objeleride taşır.</strong>
+</code>
+</pre>
+    </div>
+</p>
+</body>
+</html>
