@@ -117,5 +117,59 @@ Bu Projede Jsp ve Servlet konularından bahsedeceğim.
     <li> web.xml incelemesini <a target="_blank" href="http://okesmez.com/jsp-servlet/5_web.xml_incele.html">http://okesmez.com/jsp-servlet/5_web.xml_incele.html</a> adresinde mevcutur.</li>
     </ul>
 </p>
+<div>
+    <h1>6 - (Servlet - Jsp)   ServletConfig</h1>
+</div>
+<p>
+    <h2>A) Nedir Bu ServletConfig.</h2>
+    <ul>
+        <li style="padding: 10px;">
+           Daha önce tanımlamasını yapmış olduğumuz web.xml konfigirasyon dosyasını okumamızı sağlayan interfacedir. ServletConfig sadece ilgili servlet için 
+           tanımlanmış olan konfigirasyonlara ulaşmaızı sağlar.
+        </li>
+    </ul>
+    <h2>B) ServletConfig Methodlarına Bakalım.</h2>
+    <div style="width: 100%;float: left;margin-bottom: 15px;">
+        <code style="background-color: #ddd;padding: 10px;float: left;"> 
+            public String getServletName(); ==> <strong>Çalışmakta olan servlet adını alır.</strong>  <br>
+            public String getInitParameter(String name); <strong>Adı gönderilen parametrenin değerini döndürür.</strong>  <br>
+            public Enumeration<String> getInitParameterNames(); <strong>Parametre adını almamızı sağlar</strong>  <br>
+        </code>
+    </div>
+    <h2>B) Örnek Kullanım.</h2>
+    Fonksiyon örnekleri için  : <a target="_blank" href="https://github.com/ofke-yazilim/jsp-servlet/blob/master/jsp-servlet/src/java/ornek/two.java">
+        https://github.com/ofke-yazilim/jsp-servlet/blob/master/jsp-servlet/src/java/ornek/two.java</a><br>
+    Anlatım için : <a target="_blank" href="http://okesmez.com/jsp-servlet/6_servlet_config.html">
+        http://okesmez.com/jsp-servlet/6_servlet_config.html</a>
+    <h3>Aşağıda oluşturulan bir servlet içerisinde servletconfig arabirimine ait fonksiyon kullanımları verilmiştir.</h3>
+    <div style="width: 100%;float: left;margin-bottom: 15px;">
+        <code style="background-color: #ddd;padding: 10px;float: left;"> 
+            <br><strong>mime type hazırlanıyor</strong><br>
+            response.setContentType("text/html;charset=UTF-8");<br>
+            <br><strong>Response yazma nesnemiz hazırlanıyor </strong> <br>
+            PrintWriter pw = response.getWriter();  <br>
+            <br><strong>ServletConfig interface bağlanıyor </strong> <br>
+            ServletConfig config = getServletConfig();  <br>
+            <br><strong>web.xml içerisine tanımlanmış user değeri alınıyor</strong>  <br>
+            String user = config.getInitParameter("user");  <br>
+            <br><strong>web.xml içerisine tanımlanmış olan password değeri alınıyor</strong>  <br>
+            String password = config.getInitParameter("password");  <br>
+            <br><strong>şuan çalışan servlet ismnini alıyoruz. </strong> <br>
+            String servletName = config.getServletName();  <br>
+            <br><strong>Almış olduğumuz değerleri sayfa üzerine basıyoruz.</strong>  <br>
+            pw.print("<html><body>");  <br>
+            pw.print(servletName);  <br>
+            pw.print(user);  <br>
+            pw.print(password);  <br>
+            pw.print("</body></html>");  <br>
+            <br><strong>yukarıda parametrelerin değerlerini aldık  </strong><br>
+            <br><strong>Aşağıdaki  web.xml içerisine bu servlet için tanımlanmış değerleri alıyoruz. </strong> <br>
+            Enumeration<String> enm = config.getInitParameterNames();  <br>
+            while (enm.hasMoreElements()) {  <br>
+            &nbsp;&nbsp;System.out.println(enm.nextElement());  <br>
+            }  <br>
+        </code>
+    </div>
+</p>
 </body>
 </html>
