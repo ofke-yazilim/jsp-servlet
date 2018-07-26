@@ -211,6 +211,7 @@ public String getContextPath(); ==> <strong>Bulunduğumuz dizini döndürür.</s
 public InputStream getResourceAsStream(String path); ==> <strong>Dizini verilen dosyanın içeriğini almamızı sağlar.</strong>
 Yukarıda tanımlanan Fonksiyon kullanım Örnekleri  : <a href="https://github.com/ofke-yazilim/jsp-servlet/blob/master/jsp-servlet/src/java/ornek/three.java">https://github.com/ofke-yazilim/jsp-servlet/blob/master/jsp-servlet/src/java/ornek/three.java</a>
 public RequestDispatcher getRequestDispatcher(String path); ==> <strong>Servlet içerisinden jsp sayfasına ulaşmamızı sağlar forward ile kullanılırsa tanımlı objeleride taşır.</strong>
+<strong>getResourceAsStream</strong> ve getResource örneği  : <a href="https://github.com/ofke-yazilim/jsp-servlet/blob/master/jsp-servlet/src/java/ornek/three.java">https://github.com/ofke-yazilim/jsp-servlet/blob/master/jsp-servlet/src/java/ornek/three.java</a>
 </code>
 </pre>
     </div>
